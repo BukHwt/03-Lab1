@@ -54,6 +54,9 @@ form.addEventListener("submit", (event) => {
     const newCoin = document.createElement("div");
     newCoin.classList.add("coin", whichCoin);
     newCoin.textContent = whichCoin;
+    newCoin.addEventListener("click", () => {
+      newCoin.remove();
+    });
     bank.append(newCoin);
   }
 });
@@ -68,22 +71,22 @@ const endButton = document.querySelector(".endButton");
 const allButtons = document.getElementsByClassName("bulb-button");
 
 const turnOn = onButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  //   e.preventDefault(); Unnecessary
   lightBulb.classList.add("on");
 });
 
 const turnoff = offButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  //   e.preventDefault(); Unnecessary
   lightBulb.classList.remove("on");
 });
 
 const toggler = toggleButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  //   e.preventDefault(); Unnecessary
   lightBulb.classList.toggle("on");
 });
 
 const ender = endButton.addEventListener("click", (e) => {
-  e.preventDefault();
+  //   e.preventDefault(); Unnecessary
   lightBulb.remove();
   const allButtons = document.querySelectorAll(".bulb-button");
   allButtons.forEach((elem) => {
