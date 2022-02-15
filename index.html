@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>DOM Mini Challenges</title>
+  </head>
+  <body>
+    <head>
+      <h1>DOM Mini Challenges</h1>
+    </head>
+    <main>
+      <div class="one">
+        <p class="total-paragraph">Total: $0.00</p>
+        <button class="snack-button soda" data-cost="2">Lime Cola $2.00</button>
+        <button class="snack-button peanuts" data-cost="3">
+          Salted Peanuts $3.00
+        </button>
+        <button class="snack-button bar" data-cost="4">
+          Chocolate Bar $4.00
+        </button>
+        <button class="snack-button gummies" data-cost="6">
+          Fruit Gummies $6.00
+        </button>
+      </div>
+      <!-- Part Two -->
+      <div class="two">
+        <form>
+          <label for="howMany">How many</label>
+          <input type="number" name="howMany" id="howMany" required />
+          <label for="which-coin">Which Coin?</label>
+          <select name="which-coin" id="which-coin">
+            <option value="penny">Penny</option>
+            <option value="nickel">Nickel</option>
+            <option value="dime">Dime</option>
+            <option value="quarter">Quarter</option>
+          </select>
+          <button class="make-money">Make Money</button>
+        </form>
+        <div class="bank"></div>
+      </div>
+      <!-- Part Three -->
+      <div class="three">
+        <div class="light-bulb">Light Bulb</div>
+        <button class="onButton bulb-button">On</button>
+        <button class="offButton bulb-button">Off</button>
+        <button class="toggleButton bulb-button">Toggle</button>
+        <button class="endButton bulb-button">End</button>
+      </div>
+    </main>
+    <!-- script -->
+    <script src="script.js"></script>
+  </body>
+</html>
