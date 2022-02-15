@@ -85,6 +85,7 @@ const toggler = toggleButton.addEventListener("click", (e) => {
 const ender = endButton.addEventListener("click", (e) => {
   e.preventDefault();
   lightBulb.remove();
+  const allButtons = document.querySelectorAll(".bulb-button");
   allButtons.forEach((elem) => {
     elem.disabled = true;
   });
